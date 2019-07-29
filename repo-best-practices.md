@@ -4,27 +4,23 @@ The document describes the best-practices to create and maintain PDND repositori
 
 ## Nomenclature
 
-While the previously called *Data Analytics Framework (DAF)* project move its name to Piattaforma Digitale Nazionale Dati (PDND), quickly changing the name of all related repositories and resources resulted in a long and painful process.
-
-For this reason, all repositories are still named (and so the new ones should be) *daf-{repo-name}*, for example *daf-template*.
-
-You're still encouraged to be consistent with this model.
+The majority of the PDND repositories live in a shared GitHub space. For this reason it's a good practice to prefix all the PDND related repositories using the word  *pdnd*, for example *pdnd-template*.
 
 ## Description
 
 Descriptions are important to tell users what you're doing in few words. Try to always add one or two lines of descriptions to your repository.
 
-## PDND (daf-)template
+## PDND template
 
-To avoid confusion and style segmentation between repositories, the community has created a dedicated GitHub template repository, name [daf-template](https://github.com/teamdigitale/daf-template).
+To avoid confusion and style segmentation between repositories, the community has created a dedicated GitHub template repository, name [pdnd-template](https://github.com/teamdigitale/pdnd-template).
 
 The repository template should be used
 
-* to create new repositories (after clicking new, select as repository template the [daf-template](https://github.com/teamdigitale/daf-template))
+* to create new repositories (after clicking new, select as repository template the [pdnd-template](https://github.com/teamdigitale/pdnd-template))
 
 * as source to verify the conformance of existing repositories. Simply go on GitHub or clone the repository and verify that the repository you're owner for has all the requirements needed
 
-The [daf-template](https://github.com/teamdigitale/daf-template) repository includes the following features/files:
+The [pdnd-template](https://github.com/teamdigitale/pdnd-template) repository includes the following features/files:
 
 * **Repository description** - mandatory - The template repository comes with a description. Simply change the default one and adapt it to your needs.
 
@@ -34,7 +30,7 @@ The [daf-template](https://github.com/teamdigitale/daf-template) repository incl
 
 * **LICENSE** - mandatory - The work produced by the Team is generally committed under the *GNU AFFERO GENERAL PUBLIC LICENSE - version 3* license. Make sure this applies to your work as well or [talk to somebody of the Team](who-does-what.md) about this.
 
-* **.circleci folder** - optional - The Team uses CircleCI as the default Continuous Integration tool to run tests and make sure the code works before it can be merged. The *.circleci* folder contains an exemplar CircleCI configuration, used to setup a generic Ansible linting job. The CI job uses a standard [daf-infra-test-env image] that contains basic test tools (i.e. python, git, ansible-lint, ...). Once the configuration file has been merged, jobs triggering needs to be activated by one of the infrastructure [administrators](who-does-what.md) from the CircleCI portal.
+* **.circleci folder** - optional - The Team uses CircleCI as the default Continuous Integration tool to run tests and make sure the code works before it can be merged. The *.circleci* folder contains an exemplar CircleCI configuration, used to setup a generic Ansible linting job. The CI job uses a standard [pdnd-infra-test-env image](https://github.com/teamdigitale/pdnd-infra-test-env) that contains basic test tools (i.e. python, git, ansible-lint, ...). Once the configuration file has been merged, jobs triggering needs to be activated by one of the infrastructure [administrators](who-does-what.md) from the CircleCI portal.
 
 * **.github (issue templates)** - mandatory - contains a template for your users to open issues. Simply copy it to your repository. GitHub will automatically render it when users open new issues.
 
@@ -42,7 +38,7 @@ The [daf-template](https://github.com/teamdigitale/daf-template) repository incl
 
 * **.gitattributes** - mandatory - helps people with Windows and specific editors to commit code using the same format. 
 
-## Additional steps (cannot be inherited by daf-template)
+## Additional steps (cannot be inherited by pdnd-template)
 
 Some properties and checks cannot be inherited by the *template repository*, so it's up to its owner to enable them manually. This includes
 
@@ -62,6 +58,6 @@ Repositories can be grouped in two categories:
 
 * **infrastructure/operational repositories** - usually, these repositories are used to provision the infrastructure (i.e. Azure resources, virtual machines). In this case, different branches apply to different environments (i.e. development, staging, production). As such, the master branch has been removed many branches -as many as the environments are- have been created. In principle, commits should first be committed to development, then promoted to staging, then production. Periodically, at least master should be tagged.
 
-This *daf-handbook* repository is an exception and only uses the *master* branch, that should be periodically tagged.
+This *pdnd-handbook* repository is an exception and only uses the *master* branch, that should be periodically tagged.
 
 Tagging follows the classic [Semantic Versioning model](https://semver.org/).
