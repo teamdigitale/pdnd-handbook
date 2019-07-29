@@ -1,7 +1,7 @@
 # Handbook for Piattaforma Digitale Nazionale Dati (PDND), previously DAF
 
-The DAF Team handbook is the central repository for how we run the project.
-As part of our value of supporting the open source philosophy, the handbook is open to the world, and we welcome feedback. Please make a [pull request](https://github.com/teamdigitale/daf-handbook/pulls) to suggest improvements or add clarifications. Please use [issues](https://github.com/teamdigitale/daf-handbook/issues) to ask questions.
+The PDND Team handbook is the central repository for how we run the project.
+As part of our value of supporting the open source philosophy, the handbook is open to the world, and we welcome feedback. Please make a [pull request](https://github.com/teamdigitale/pdnd-handbook/pulls) to suggest improvements or add clarifications. Please use [issues](https://github.com/teamdigitale/pdnd-handbook/issues) to ask questions.
 
 The idea is to make this notebook become something like [Gitlab’s](https://about.gitlab.com/handbook/), and gets also some inspiration from the [Remote Manifesto](https://www.remoteonly.org/) and [Valve Handbook](https://steamcdn-a.akamaihd.net/apps/valve/Valve_NewEmployeeHandbook.pdf) and [Basecamp's handbook](https://github.com/basecamp/handbook).
 
@@ -18,7 +18,7 @@ You can find more informations about the PDND on the official [Digital Transform
 
 ## How to contribute
 
-Contributions are welcome. Feel free to [open issues](./issues) and submit a [pull request](./pulls) at any time, but please read [our handbook](https://github.com/teamdigitale/daf-handbook) first.
+Contributions are welcome. Feel free to [open issues](./issues) and submit a [pull request](./pulls) at any time, but please read [our handbook](https://github.com/teamdigitale/pdnd-handbook) first.
 
 ## License
 
